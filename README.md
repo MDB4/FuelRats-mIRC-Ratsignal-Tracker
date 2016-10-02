@@ -9,6 +9,7 @@ Parses ratsignals, stores details in hashtables, logs to a window, keeps a listb
   Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
 
 Upon each new ratsignal, the reported system name is copied into the clipboard. This is the original idea that spawned this script; I didn't want to tab out of game to copy the system name.   
+
 Many thanks to Clapton for giving me a nice regex function to parse out the system name, which I then modified to grab additional info from the signal, and now I have this hideous script.
 
 All off by default, text-to-speech options are in the right-click menu of the @Ratsignal window for audible Ratsignal notification.
