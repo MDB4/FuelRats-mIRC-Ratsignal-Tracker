@@ -16,11 +16,13 @@ All off by default, text-to-speech options are in the right-click menu of the @R
 
 If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear line reported by MechaSqueak[BOT], a browser window will open the paperwork link automatically.
 
-New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:
- **[TIME] CMDR • Case # • Platform • System • Language** (code red cases indicated with a bold red case #)
+New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
+ **[TIME] CMDR • Case # • Platform • System • Language**
 
 Current cases are listed in a listbox in the right pane of the @Ratsignal window, sorted newest first:   
  **CMDR | Case # | Platform | System | Language | Signal Time**
+
+Code red cases indicated with a bold red case #    
 
 Cleared cases are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case Duration • 1st Limpet • Paperwork**
