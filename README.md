@@ -57,12 +57,13 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient.
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
 - If the script is loaded when the board is not clear, those current cases will obviously not have thier origin details logged upon !clear.
+- Duplicate ratsignals (under the same CMDR) are basically ignored. If a dupe happens, a counter is incremented and the signal is ignored. Upon !clear of a cmdr with >0 dupes, the count is decremented. On !clear with 0 dupes, the info is saved. This info will be inaccurate if the final !clear is not done on the actual case.
 - !CMDR & !SYS used in PM do not broadcast to channels, these will be missed.
 - A board refresh in and of itself shouldn't prevent !clear tracking, but if new cases come in before all existing cases at the time of a refresh have been cleared, and !CMDR is used on a case, I'll lose track of the new CMDR.
 - I probably forgot some things as well
 
 ## Unknown issues
- Likely exist
+- Likely exist
 
 #### TODO
 - Code Red update tracking
