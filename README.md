@@ -44,7 +44,7 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Text-to-speech options
 
 ### Text-to-speech options for audible notification of Ratsignals:
-**Note: if enabled, the current implementation will speak "oh shit" on code red ratsignals, because it makes me laugh. Change it if you wish.**
+**Note: if enabled, the current implementation will speak "oh shit" on code red ratsignals, because it makes me laugh. Change it if you wish, it's in the ratsignal_speak alias.**
 - Ratsignals: General override. Must be set to $true for any notification
 - PC: $true / $false
 - XB: $true / $false
