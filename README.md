@@ -11,6 +11,8 @@ Parses ratsignals, stores details in hashtables, logs to a window, keeps a listb
 Upon each new ratsignal, the reported system name is copied into the clipboard. This is the original idea that spawned this script; I didn't want to tab out of game to copy the system name.   
 Many thanks to Clapton for giving me a nice regex function to parse out the system name, which I then modified to grab additional info from the signal, and now I have this hideous script.
 
+All off by default, text-to-speech options are in the right-click menu of the @Ratsignal window for audible Ratsignal notification.
+
 If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear line reported by MechaSqueak[BOT], a browser window will open the paperwork link automatically.
 
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
@@ -35,9 +37,18 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Current "quiet" duration: time since last signal, and the maximum quiet record
 - Cases in the past 1hr, and the maximum 1hr record
 - Cases in the past 24hrs and the maximum 24hr record
-- Embedded in the 24hr record entry, is a list of the number of cases in each of the previous 24 hours
-- Text-to-speech options for audible notification of Ratsignals, PC, Xbox, and Code Red.
+- Embedded in the 24hr record entry is a list of the number of cases in each of the previous 24 hours
+- Text-to-speech options
 
+### Text-to-speech options for audible notification of Ratsignals:
+**Note: if enabled, the current implementation will speak "oh shit" on code red ratsignals, because it makes me laugh. Change it if you wish.**
+- Ratsignals: General override. Must be set to $true for any notification
+- PC: $true / $false
+- XB: $true / $false
+- Clears: $true / $false
+- Quits: $true / $false (current clients only)
+- Rejoins: $true / $false (current clients only)
+ 
 ## Known issues
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient.
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
