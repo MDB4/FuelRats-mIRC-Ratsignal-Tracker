@@ -48,7 +48,8 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Clears: $true / $false
 - Quits: $true / $false (current clients only)
 - Rejoins: $true / $false (current clients only)
- 
+- Speak Volume: on my system, the TTS is rather loud at full volume. mIRC can set volume, so it can be specified here. The scale is 0-65535.
+
 ## Known issues
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient.
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
