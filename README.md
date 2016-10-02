@@ -24,6 +24,13 @@ Cleared cases are displayed in the left pane of the @Ratsignal window as follows
 
 When a !clear is done on a matching case, it's removed from the active hashtable and the listbox, and stored in the cleared hashtable.
 
+If you have a PM window with MechaSqueak[BOT], some right-click items are added for:
+- !list (and the various switches)
+- !search last Ratsignal reported system (this is automatically in the clipboard after each ratsignal)
+- !search user-input system
+- !quote
+- !help
+
 ## @Ratsignal custom window right-click context menu lists:
 - Current "quiet" duration: time since last signal, and the maximum quiet record
 - Cases in the past 1hr, and the maximum 1hr record
