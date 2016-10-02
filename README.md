@@ -11,7 +11,7 @@ Parses ratsignals, stores details in hashtables, logs to a window, keeps a listb
 Upon each new ratsignal, the reported system name is copied into the clipboard. This is the original idea that spawned this script; I didn't want to tab out of game to copy the system name.   
 Many thanks to Clapton for giving me a nice regex function to parse out the system name, which I then modified to grab additional info from the signal, and now I have this hideous script.
 
-If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear line reported by MechaSqueak[BOT], a browser window will open the paperwork link automatically. TODO: make this toggleable.
+If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear line reported by MechaSqueak[BOT], a browser window will open the paperwork link automatically.
 
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
@@ -41,3 +41,11 @@ When a !clear is done on a matching case, it's removed from the active hashtable
 
 ## Unknown issues
  Likely exist
+
+#### TODO
+- Code Red update tracking
+- Platform update tracking
+- Verify and update current case numbers when anyone does a !list or !quote
+- Make automatic opening of your paperwork toggleable
+- Identify and remove old unused code
+- There's more I don't remember at the moment
