@@ -1,4 +1,5 @@
 # FuelRats-mIRC-Ratsignal-Tracker
+![](http://i.imgur.com/kWgn6Qg.png)
 ![](http://i.imgur.com/7blMJrh.png)
 
 Novice/hobbyist work in progress. Warning: this code may burn retinas and/or infuriate you.
