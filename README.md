@@ -57,7 +57,7 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Speak Volume: on my system, the TTS is rather loud at full volume. mIRC can set volume, so it can be specified here. The scale is 0-65535.
 
 ## Known issues
-- I have zero programming / scripting training. Many functions are written poorly and are probably inefficient.
+- I have zero programming / scripting training. Many functions are written poorly and are probably inefficient, or outright stupid - like why did he write it that way when you could just...
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
 - If the script is loaded when the board is not clear, those current cases will obviously not have thier origin details logged upon !clear.
 - Duplicate ratsignals (under the same CMDR) are basically ignored. If a dupe happens, a counter is incremented and the signal is ignored. Upon !clear of a cmdr with >0 dupes, the count is decremented. On !clear with 0 dupes, the info is saved. This info will be inaccurate if the final !clear is not done on the actual case.
