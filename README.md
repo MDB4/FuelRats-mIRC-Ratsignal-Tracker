@@ -73,5 +73,6 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Platform update tracking
 - Verify and update current case numbers when anyone does a !list or !quote
 - Make automatic opening of your paperwork toggleable
+- Identify and fix sorting problems stemming from certain characters in CMDR names
 - Identify and remove old unused code
 - There's more I don't remember at the moment
