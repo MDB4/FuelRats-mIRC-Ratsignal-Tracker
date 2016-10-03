@@ -7,8 +7,7 @@ Novice/hobbyist work in progress. Warning: this code may burn retinas and/or inf
 Copy fuelrats.ini to your mIRC script folder, open the script editor (alt+r), click File->Load (ctrl+l), locate & open fuelrats.ini.
 
 ## Features (bugs?)
-Parses ratsignals, stores details in hashtables, logs to a window, keeps a listbox populated with current cases.
-  Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
+Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
 
 Upon each new ratsignal, the reported system name is copied into the clipboard. This is the original idea that spawned this script; I didn't want to tab out of game to copy the system name.   
 
