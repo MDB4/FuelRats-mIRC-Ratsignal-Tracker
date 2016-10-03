@@ -62,7 +62,8 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Duplicate ratsignals (under the same CMDR) are basically ignored. If a dupe happens, a counter is incremented and the signal is ignored. Upon !clear of a cmdr with >0 dupes, the count is decremented. On !clear with 0 dupes, the info is saved. This info will be inaccurate if the final !clear is not done on the actual case.
 - !CMDR & !SYS used in PM do not broadcast to channels, these will be missed. In the case of !cmdr, this results in a stray case on the active list, and the actual clear containing dummy origin info.
 - A board refresh in and of itself shouldn't prevent !clear tracking, but if new cases come in before all existing cases at the time of a refresh have been cleared, and !CMDR is used on a case, I'll lose track of the new CMDR.
-- Listbox sorting problems stemming (I think) from certain characters in CMDR names
+- Listbox sorting problems stemming (I think) from certain characters in CMDR names.
+- I think an ampersand (&) anywhere in the ratsignal line seems to muck with things. CMDR name ends up preceded by a ' = ' and will not match a !clear if i don't notice and correct in time.
 - I probably forgot some things as well
 
 ## Unknown issues
