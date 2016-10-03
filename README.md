@@ -1,6 +1,5 @@
 # FuelRats-mIRC-Ratsignal-Tracker
-![](http://i.imgur.com/mTzp8y3.png)
-![](http://i.imgur.com/dnzCe5p.png)
+![](http://i.imgur.com/dS6lHoq.png)
 
 Novice/hobbyist work in progress. Warning: this code may burn retinas and/or infuriate you.
 
@@ -22,10 +21,11 @@ If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear lin
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
 
-Current cases are listed in a listbox in the right pane of the @Ratsignal window, sorted newest first:   
+Current cases are listed in a listbox in the right pane of the @Ratsignal window, sorted newest first:
  **CMDR | Case # | Platform | System | Language | Signal Time**
 
 Code red cases indicated with a bold red case #    
+Inactive cases indicated with gray CMDR names    
 
 Cleared cases are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case Duration • 1st Limpet • Paperwork**
