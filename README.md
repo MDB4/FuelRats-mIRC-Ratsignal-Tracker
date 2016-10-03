@@ -42,7 +42,9 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Current "quiet" duration: time since last signal, and the maximum quiet record
 - Cases in the past 1hr, and the maximum 1hr record
 - Cases in the past 24hrs and the maximum 24hr record
-- Embedded in the 24hr record entry is a list of the number of cases in each of the previous 24 hours
+- Option Toggle: Copy system name to clipboard on new ratsignals
+- Option Toggle: Open paperwork link when you get 1st limpet
+- Option Toggle: Listbox display of PC, XB, and inactive cases
 - Text-to-speech options
 
 ### Text-to-speech options for audible notification of Ratsignals:
