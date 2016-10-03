@@ -71,6 +71,7 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 #### TODO
 - Code Red update tracking
 - Platform update tracking
+- Add announcement of self and manual ratsignals to the custom window. Currently only (somewhat) tracked using some dummy info - assumes O2: OK, PC, English, and a dummy system name. Implement proper parsing of those ratsignals
 - Verify and update current case numbers when anyone does a !list or !quote
 - Make automatic opening of your paperwork toggleable
 - Identify and remove old unused code
