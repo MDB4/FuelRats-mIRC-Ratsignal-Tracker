@@ -1,5 +1,5 @@
 # FuelRats-mIRC-Ratsignal-Tracker
-![mIRC custom window](http://i.imgur.com/g2Jf2fB.png)
+![mIRC custom window](http://i.imgur.com/CIdh8cE.png)
 
 Novice/hobbyist work in progress. Warning: this code may burn retinas and/or infuriate you.
 
