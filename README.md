@@ -47,16 +47,6 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Option Toggle: Listbox display of PC, XB, and inactive cases
 - Option Toggle: Text-to-speech events
 
-### Text-to-speech options for audible notification of Ratsignals:
-**Note: if enabled, the current implementation will speak "oh shit" on code red ratsignals, because it makes me laugh. Change it if you wish, it's in the ratsignal_speak alias.**
-- Ratsignals: General override. Must be set to $true for any notification
-- PC: $true / $false
-- XB: $true / $false
-- Clears: $true / $false
-- Quits: $true / $false (current clients only)
-- Rejoins: $true / $false (current clients only)
-- Speak Volume: on my system, the TTS is rather loud at full volume. mIRC can set volume, so it can be specified here. The scale is 0-65535.
-
 ## Known issues
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient, or outright stupid - like why did he write it that way when you could just...
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
