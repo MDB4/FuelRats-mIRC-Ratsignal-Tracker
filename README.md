@@ -33,6 +33,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Option Toggle: Open paperwork link when you get 1st limpet
 - Option Toggle: Listbox display of PC, XB, and inactive cases
 - Option Toggle: Text-to-speech events
+- A case UUID in the clipboard will present an option to view the case on API
 
 ## PM Window MechaSqueak[BOT] right-click items:
 - !list (and the various switches)
