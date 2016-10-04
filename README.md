@@ -7,7 +7,7 @@ The original idea that spawned this script was born of my laziness. I didn't wan
 Many thanks to Clapton for seeing that, and giving me a nice regex function to parse out the system name, which I eventually modified to grab additional info from the signal, and now I have this hideous script. /me fires the snickers cannon @ Clapton
 
 # Installation
-Copy fuelrats.ini to your mIRC script folder, open the script editor (alt+r), click File->Load (ctrl+l), locate & open fuelrats.ini.
+Copy [fuelrats.ini](https://raw.githubusercontent.com/MDB4/mIRC-Ratsignal-Tracker/master/fuelrats.ini) to your mIRC script folder, open the script editor (alt+r), click File->Load (ctrl+l), locate & open fuelrats.ini.
 
 ## Features (bugs?)
 Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
