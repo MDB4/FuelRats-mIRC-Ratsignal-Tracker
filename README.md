@@ -3,19 +3,14 @@
 
 Novice/hobbyist work in progress. Warning: this code may burn retinas and/or infuriate you.
 
+The original idea that spawned this script was born of my laziness. I didn't want to tab out of game to copy the system name from IRC. I came up with a disgusting line of mIRC code that seemed to work, and shared it with some rats.
+Many thanks to Clapton for seeing that, and giving me a nice regex function to parse out the system name, which I eventually modified to grab additional info from the signal, and now I have this hideous script. /me fires the snickers cannon @ Clapton
+
 # Installation
 Copy fuelrats.ini to your mIRC script folder, open the script editor (alt+r), click File->Load (ctrl+l), locate & open fuelrats.ini.
 
 ## Features (bugs?)
 Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
-
-Upon each new ratsignal, the reported system name is copied into the clipboard. This is the original idea that spawned this script; I didn't want to tab out of game to copy the system name.   
-
-Many thanks to Clapton for giving me a nice regex function to parse out the system name, which I then modified to grab additional info from the signal, and now I have this hideous script. /me fires the snickers cannon @ Clapton
-
-All off by default, text-to-speech options are in the right-click menu of the @Ratsignal window for audible Ratsignal notification.
-
-If you get 1st limpet on a case, and your IRC Nick is mentioned in the clear line reported by MechaSqueak[BOT], a browser window will open the paperwork link automatically.
 
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
@@ -26,17 +21,8 @@ Current cases are listed in a listbox in the right pane of the @Ratsignal window
 Code red cases indicated with a bold red case #    
 Inactive cases indicated with gray CMDR names    
 
-Cleared cases are displayed in the left pane of the @Ratsignal window as follows:   
+Cleared cases are removed from the listbox and displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case Duration • 1st Limpet • Paperwork**
-
-When a !clear is done on a matching case, it's removed from the active hashtable and the listbox, and stored in the cleared hashtable.
-
-If you have a PM window with MechaSqueak[BOT], some right-click items are added for:
-- !list (and the various switches)
-- !search last Ratsignal reported system (this is automatically in the clipboard after each ratsignal)
-- !search user-input system
-- !quote
-- !help
 
 ## @Ratsignal custom window right-click context menu lists:
 - Current "quiet" duration: time since last signal, and the maximum quiet record
@@ -46,6 +32,13 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Option Toggle: Open paperwork link when you get 1st limpet
 - Option Toggle: Listbox display of PC, XB, and inactive cases
 - Option Toggle: Text-to-speech events
+
+## PM Window MechaSqueak[BOT] right-click items:
+- !list (and the various switches)
+- !search last Ratsignal reported system (this is optionally put in the clipboard after each ratsignal)
+- !search user-input system
+- !quote user-input case
+- !help
 
 ## Known issues
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient, or outright stupid - like why did he write it that way when you could just...
