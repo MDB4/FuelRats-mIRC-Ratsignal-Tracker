@@ -25,6 +25,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
  **[TIME] CMDR • Case Duration • 1st Limpet • Paperwork**
 
 ## @Ratsignal custom window right-click context menu lists:
+###### (see wiki for screenshots)
 - Current "quiet" duration: time since last signal, and the maximum quiet record
 - Cases in the past 1hr, and the maximum 1hr record
 - Cases in the past 24hrs and the maximum 24hr record
