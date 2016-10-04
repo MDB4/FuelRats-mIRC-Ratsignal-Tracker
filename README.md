@@ -45,7 +45,7 @@ If you have a PM window with MechaSqueak[BOT], some right-click items are added 
 - Option Toggle: Copy system name to clipboard on new ratsignals
 - Option Toggle: Open paperwork link when you get 1st limpet
 - Option Toggle: Listbox display of PC, XB, and inactive cases
-- Text-to-speech options
+- Option Toggle: Text-to-speech events
 
 ### Text-to-speech options for audible notification of Ratsignals:
 **Note: if enabled, the current implementation will speak "oh shit" on code red ratsignals, because it makes me laugh. Change it if you wish, it's in the ratsignal_speak alias.**
