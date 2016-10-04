@@ -35,7 +35,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 
 ## PM Window MechaSqueak[BOT] right-click items:
 - !list (and the various switches)
-- !search last Ratsignal reported system (this is optionally put in the clipboard after each ratsignal)
+- !search last Ratsignal reported system
 - !search user-input system
 - !quote user-input case
 - !help
