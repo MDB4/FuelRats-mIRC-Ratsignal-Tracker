@@ -12,6 +12,9 @@ Right-click and save [fuelrats.ini](https://raw.githubusercontent.com/MDB4/mIRC-
 ## Features (bugs?)
 Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
 
+Optionally:
+Copies system name to clipboard on new ratsignal and, opens paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
+
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
 
@@ -35,6 +38,11 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Option Toggle: Text-to-speech events
 - A case UUID in the clipboard will present an option to view the case on API
 
+## @Ratsignal LISTBOX custom window right-click context menu lists:
+- Toggle Case Active/Inactive
+- Toggle Case Code Red
+- Toggle Case Platform
+
 ## PM Window MechaSqueak[BOT] right-click items:
 - !list (and the various switches)
 - !search last Ratsignal reported system
@@ -50,7 +58,6 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - !CMDR & !SYS used in PM do not broadcast to channels, these will be missed. In the case of !cmdr, this results in a stray case on the active list, and the actual clear containing dummy origin info.
 - A board refresh in and of itself shouldn't prevent !clear tracking, but if new cases come in before all existing cases at the time of a refresh have been cleared, and !CMDR is used on a case, I'll lose track of the new CMDR.
 - A !reopen (and subsequent !clear of the same CMDR) will result in a cleared case with dummy origin info, because there is no matching case in the ratsignal_active hashtable at !clear.
-- Listbox sorting problems stemming (I think) from certain characters in CMDR names.
 - I think an ampersand (&) anywhere in the ratsignal line seems to muck with things. CMDR name ends up preceded by a ' = ' and will not match a !clear if i don't notice and correct in time.
 - I probably forgot some things as well
 
@@ -58,8 +65,6 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Likely exist
 
 #### TODO
-- Code Red update tracking
-- Platform update tracking
 - Add announcement of self and manual ratsignals to the custom window. Currently only (somewhat) tracked using some dummy info - assumes O2: OK, PC, English, and a dummy system name. Implement proper parsing of those ratsignals
 - Verify and update current case numbers when anyone does a !list or !quote
 - Identify and remove old unused code
