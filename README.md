@@ -13,7 +13,7 @@ Right-click and save [fuelrats.ini](https://raw.githubusercontent.com/MDB4/mIRC-
 Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients, and the number of times they've been back >:D
 
 Optionally:
-Copies system name to clipboard on new ratsignal and, opens paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
+Copies system name to clipboard on new ratsignal (and !sys) and, opens paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
 
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
