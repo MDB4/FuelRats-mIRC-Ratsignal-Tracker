@@ -10,7 +10,7 @@ Many thanks to Clapton for seeing that, and giving me a nice regex function to p
 Right-click and save [fuelrats.ini](https://raw.githubusercontent.com/MDB4/mIRC-Ratsignal-Tracker/master/fuelrats.ini) to your mIRC script folder, open the script editor (alt+r), click File->Load (ctrl+l), locate & open fuelrats.ini.
 
 ## Features (bugs?)
-Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients >:D
+Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients, and the number of times they've been back >:D
 
 Optionally:
 Copies system name to clipboard on new ratsignal and, opens paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
@@ -32,16 +32,19 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Current "quiet" duration: time since last signal, and the maximum quiet record
 - Cases in the past 1hr, and the maximum 1hr record
 - Cases in the past 24hrs and the maximum 24hr record
+- Hourly breakdown of number of cases in the past 24 hours
 - Option Toggle: Copy system name to clipboard on new ratsignals
 - Option Toggle: Open paperwork link when you get 1st limpet
+- Option Toggle: Display hourly Ratsignal counts & records
 - Option Toggle: Listbox display of PC, XB, and inactive cases
 - Option Toggle: Text-to-speech events
-- A case UUID in the clipboard will present an option to view the case on API
+- If you have a case UUID in your clipboard, an option to view the case on API will exist
 
 ## @Ratsignal LISTBOX custom window right-click context menu lists:
 - Toggle Case Active/Inactive
 - Toggle Case Code Red
 - Toggle Case Platform
+- Duration since case was opened
 
 ## PM Window MechaSqueak[BOT] right-click items:
 - !list (and the various switches)
@@ -55,10 +58,8 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Relies on constant connection to fuelrats irc. i.e: no shutting down mIRC when you're done for the day.
 - If the script is loaded when the board is not clear, those current cases will obviously not have thier origin details logged upon !clear.
 - Duplicate ratsignals (under the same CMDR) are basically ignored. If a dupe happens, a counter is incremented and the signal is ignored. Upon !clear of a cmdr with >0 dupes, the count is decremented. On !clear with 0 dupes, the info is saved. This info will be inaccurate if the final !clear is not done on the actual case.
-- !CMDR & !SYS used in PM do not broadcast to channels, these will be missed. In the case of !cmdr, this results in a stray case on the active list, and the actual clear containing dummy origin info.
+- Some !commands used in PM do not broadcast to channels, these will be missed. In the case of !cmdr, this results in a stray case on the active list, and the actual clear containing dummy origin info.
 - A board refresh in and of itself shouldn't prevent !clear tracking, but if new cases come in before all existing cases at the time of a refresh have been cleared, and !CMDR is used on a case, I'll lose track of the new CMDR.
-- A !reopen (and subsequent !clear of the same CMDR) will result in a cleared case with dummy origin info, because there is no matching case in the ratsignal_active hashtable at !clear.
-- I think an ampersand (&) anywhere in the ratsignal line seems to muck with things. CMDR name ends up preceded by a ' = ' and will not match a !clear if i don't notice and correct in time.
 - I probably forgot some things as well
 
 ## Unknown issues
