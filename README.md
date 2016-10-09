@@ -84,6 +84,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Likely exist
 
 #### TODO
+- Add repeat checking for manual and self rsignals
 - Add listbox context menu items to update CMDR and System
 - Verify and update current case numbers when anyone does a !list or !quote
 - Identify and remove old unused code
