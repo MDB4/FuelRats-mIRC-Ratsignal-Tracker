@@ -84,7 +84,8 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Likely exist
 
 #### TODO
-- Add announcement of self and manual ratsignals to the custom window. Currently only (somewhat) tracked using some dummy info - assumes O2: OK, PC, English, and a dummy system name. Implement proper parsing of those ratsignals
+- Add listbox context menu items to update CMDR and System
 - Verify and update current case numbers when anyone does a !list or !quote
 - Identify and remove old unused code
+- Is it possible to read API and list all rescue details? Create a hashtable for ultimate repeat client notification
 - There's more I don't remember at the moment
