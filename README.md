@@ -14,8 +14,23 @@ Right-click and save [fuelrats.ini](https://raw.githubusercontent.com/MDB4/mIRC-
 ## Features (bugs?)
 Parses ratsignals, stores details in hashtables, logs to a custom mIRC window & keeps its listbox populated with current cases. Cleared case details additionally include clear time, case duration, 1st limpet, and paperwork. Referenced upon new signals to indicate repeat clients, and the number of times they've been back >:D
 
-Optionally:
-Copies system name to clipboard on new ratsignal (and !sys) and, opens paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
+####Options:
+- Copy system name to clipboard on new ratsignal (and !sys)
+- Open paperwork when your nick is on the paperwork output line from MechaSqueak[BOT]
+
+####Optional audible text-to-speech notification of most Ratsignal events:
+- PC Ratsignals
+- XB Ratsignals
+- CR Indication (with custom phrasing)
+- !cleared cases
+- !cmdr updates
+- !cr updates
+- !sys updates
+- !pc !xb platform updates
+- Current client IRC quit/part
+- Current client IRC rejoin
+- Repeat clients
+- Clients in frequently reported systems
 
 New Ratsignals are displayed in the left pane of the @Ratsignal window as follows:   
  **[TIME] CMDR • Case # • Platform • System • Language**
@@ -43,6 +58,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - If you have a case UUID in your clipboard, an option to view the case on API will exist
 
 ## @Ratsignal LISTBOX custom window right-click context menu lists:
+###### note: these are local updates only, they do not trigger any !commands to the bot.
 - Toggle Case Active/Inactive
 - Toggle Case Code Red
 - Toggle Case Platform
@@ -57,7 +73,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 
 ## Known issues
 - I have zero programming / scripting training. Many functions are written poorly and are probably inefficient, or outright stupid - like why did he write it that way when you could just...
-- Relies on constant connection to #fuelrats and #RatChat. i.e: it can't log what you're not in channel to see.
+- Relies on constant connection to #fuelrats and #RatChat. i.e: it can't log what you're not in channel to see broadcast.
 - If the script is loaded when the board is not clear, those current cases will obviously not have thier origin details logged upon !clear.
 - Duplicate ratsignals (under the same CMDR) are basically ignored. If a dupe happens, a counter is incremented and the signal is ignored. Upon !clear of a cmdr with >0 dupes, the count is decremented. On !clear with 0 dupes, the info is saved. This info will be inaccurate if the final !clear is not done on the actual case.
 - Some !commands used in PM do not broadcast to channels, these will be missed. In the case of !cmdr, this results in a stray case on the active list, and the actual clear containing dummy origin info.
