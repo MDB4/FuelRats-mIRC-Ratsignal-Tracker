@@ -1,6 +1,8 @@
 # FuelRats-mIRC-Ratsignal-Tracker
 ![mIRC custom window](http://i.imgur.com/CIdh8cE.png)
 
+[more screenshots in wiki](https://github.com/MDB4/mIRC-Ratsignal-Tracker/wiki)
+
 Novice/hobbyist work in progress. Warning: this code may burn retinas and/or infuriate you.
 
 The original idea that spawned this script was born of my laziness. I didn't want to tab out of game to copy the system name from IRC. I came up with a disgusting line of mIRC code that seemed to work, and shared it with some rats.
