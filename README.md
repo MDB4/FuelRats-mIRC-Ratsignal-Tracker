@@ -86,7 +86,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 #### TODO
 - Add repeat checking for manual and self rsignals
 - Add listbox context menu items to update CMDR and System
-- Verify and update current case numbers when anyone does a !list or !quote
+- Verify and update current case numbers when anyone does a !quote
 - Identify and remove old unused code
 - Is it possible to read API and list all rescue details? Create a hashtable for ultimate repeat client notification
 - There's more I don't remember at the moment
