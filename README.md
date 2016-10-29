@@ -84,6 +84,7 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 - Likely exist
 
 #### TODO
+- Fix CMDR names beginning with [ not being matched on !clear
 - Add repeat checking for manual and self rsignals
 - Add listbox context menu items to update CMDR and System
 - Verify and update current case numbers when anyone does a !quote
