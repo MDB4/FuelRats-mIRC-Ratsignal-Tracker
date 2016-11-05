@@ -86,7 +86,6 @@ Cleared cases are removed from the listbox and displayed in the left pane of the
 #### TODO
 - Fix CMDR names beginning with [ not being matched on !clear
 - Add repeat checking for manual and self rsignals
-- Add listbox context menu items to update CMDR and System
 - Verify and update current case numbers when anyone does a !quote
 - Identify and remove old unused code
 - Is it possible to read API and list all rescue details? Create a hashtable for ultimate repeat client notification
